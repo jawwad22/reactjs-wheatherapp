@@ -26,9 +26,9 @@ class App extends React.Component {
         console.log(data);
         this.setState({
             temperature:data.main.temp,
-            humdidity:data.main.humdidity,
+            humdidity:data.main.humidity,
             city:data.name,
-            desription:data.weather[0].desription
+            desription:data.weather[0].description
         })
     }
     render() {
@@ -38,9 +38,9 @@ class App extends React.Component {
                 <Forms getWeather={this.getWeather}/>
                 <Wheather temperature={this.state.temperature}
                 city={this.state.city}
-                humdidity={this.state.humdidity}
+                humidity={this.state.humdidity}
                 desription={this.state.desription}
-                
+
                  />
             </div>
         );

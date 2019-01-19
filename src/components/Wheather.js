@@ -5,7 +5,14 @@ class Wheather extends React.Component {
         return (
             <div>
             
-            <p>Wheather Component</p>
+           {this.props.city}
+           {this.props.temperature}
+           {this.props.humidity}
+           {this.props.desription}
+           
+           
+           
+           
             </div>
         );
     }
