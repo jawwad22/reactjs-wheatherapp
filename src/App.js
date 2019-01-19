@@ -7,6 +7,13 @@ import Wheather from './components/Wheather'
 const API_KEY="6dc71c2e81850a1ea5be9adef9e62e0e"
 
 class App extends React.Component {
+    state={
+        temperature:undefined,
+        city:undefined,
+        humdidity:undefined,
+        desription:undefined,
+        error:undefined,
+    }
     getWeather= async (e) => {
         e.preventDefault()
         const city=e.target.elements.city.value;
